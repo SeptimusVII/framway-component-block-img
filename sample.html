@@ -1,1 +1,34 @@
-<div class="block-img"></div>
+<div class="row">
+  <div class="block-img col-6">
+    <a href="" class="block-img__wrapper">
+      <div class="block-img__figure">
+        <img src="https://picsum.photos/600/400" alt="sample image">
+      </div>
+      <div class="block-img__content">
+        Lorem ipsum dolor sit amet
+      </div>
+    </a>
+  </div>
+</div>
+
+<constructor component="block-img">
+  <field type="separator" label="Image properties"></field>
+  <field type="select" label="ratio" target="class" values="r_1-1,r_2-1,r_1-2,r_16-9,r_4-3" labels="1:1,2:1,1:2,16:9,4:3" selected=""></field>
+  <field type="separator" label="Image alignement"></field>
+  <field type="select" label="vertical" target="class" values="img--top,img--bottom" labels="Top,Bottom" selected="" helper="Align the image only if cropped"></field>
+  <field type="select" label="horizontal" target="class" values="img--left,img--right" labels="Left,Right" selected="" helper="Align the image only if cropped"></field>
+  <field type="separator" label="Image effects on hover"></field>
+  <field type="select" label="zoom" target="class" values="zoomin,zoomout" labels="Zoom in,Zoom out" selected="" helper="Apply a zoom effect on hover. Can be stack with other effects."></field>
+  <field type="select" label="color fade" target="class" values="fadetogrey,fadetocolor" labels="Fade to grey,Fade to color" selected="" helper="Apply a color effect on hover. Can be stack with other effects."></field>
+  <field type="separator" label="Text alignement"></field>
+  <field type="select" label="horizontal" target="class" values="content__text--left,content__text--right" labels="Text left,Text right" selected="" helper="Align the text in its container."></field>
+  <field type="select" label="vertical" target="class" values="content__text--top,content__text--bottom" labels="Text top,Text bottom" selected="" helper="Align the text in its container. Only apply on a full height container."></field>
+  <field type="separator" label="Content properties"></field>
+  <field type="select" label="format" target="class" values="content--inner,content--full"  labels="Inner,Full width"  selected="content--inner" helper="<b>Inner</b>: place the content container in the block. (over the image)<br> <b>Full width</b>: the container will take all remaining space. (include <b>Inner</b>)"></field>
+  <field type="select" label="Font color" target="class" values="ft-#colors" labels="#colors" selected="" helper="Set the content's font color"></field>
+  <field type="select" label="Background color" target="class" values="content__bg--#colors" labels="#colors" selected="" helper="Set the content's background color"></field>
+  <field type="number" label="background opacity" target="class" range="0-10" values="" prefix="content__bg__opacity--" helper="Set transparency to the content's background. From 0 to 10, where 0 is non-visible and 10 is fully opaque."></field>
+  <field type="separator" label="Content effects on hover"></field>
+  <field type="select" label="translate" target="class" values="content--fromtop,content--frombottom,content--fromleft,content--fromright" labels="From top,From bottom,From left,From right" selected="" helper="Make the content appears on hover from the indicated side. Non stackable with fade effects.<br> Include: <b>Inner, Full width</b>"></field>
+  <field type="select" label="fade" target="class" values="content--fadein,content--fadeout" labels="Fade in,Fade out" selected="" helper="Apply a fading effect on hover. Non stackable with translate effects.<br> Include: <b>Inner</b>"></field>
+</constructor>

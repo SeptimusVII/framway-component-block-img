@@ -5,7 +5,7 @@ module.exports = function(app){
     BlockImg.lastUpdate     = "2.0.0";
     BlockImg.version        = "1";
     // BlockImg.factoryExclude = true;
-    // BlockImg.loadingMsg     = "This message will display in the console when component will be loaded.";
+    BlockImg.loadingMsg     = "[Deprecated]";
     // BlockImg.requires       = [];
 
     // BlockImg.prototype.onCreate = function(){
